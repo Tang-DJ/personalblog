@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactRouterDOM,{BrowserRouter, Route, NavLink} from 'react-router-dom';
+import Introduce from './Introduce';
 
 export default class Navigation extends Component{
 
@@ -10,7 +11,7 @@ export default class Navigation extends Component{
                 <div className="container">
                     <nav className="nav nav-pills">
                         <li className="active"><NavLink exact to="/">首页</NavLink></li>
-                        <li><NavLink to={{pathname: '/about'}}>个人简介</NavLink></li>
+                        <li><NavLink to={{pathname: '/introduce'}}>个人简介</NavLink></li>
                         <li><NavLink  to="/contact">项目经历</NavLink></li>
                     </nav>
                     {/*<div>
@@ -19,15 +20,16 @@ export default class Navigation extends Component{
                     <Route path="/contact" render={() => <h1>Contact</h1>} />
                 </div>*/}
 
-
-
                 </div>
 
             </BrowserRouter>
+
+            <Introduce />
         </div>
         );
     }
 }
+
 /*
 
 const isActiveFunc = (match, location) => {
