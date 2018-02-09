@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Navigation from './js/Navigation.js';
-import Footer from './js/Footer.js';
+import {Navigation} from './js/Navigation.js';
+import {Footer} from './js/Footer.js';
 import './css/App.css';
-
+import Introduce from './js/Introduce';
+import {TimeManagement} from './js/TimeManagement';
 
 class App extends Component {
 
@@ -10,20 +11,11 @@ class App extends Component {
         return (
         <div className="App">
             <Navigation />
-           {/* <header className="App-header">
-                <h1 className="App-title">Welcome to React</h1>
-            </header>
-            <p className="App-intro">
-                To get started, edit <code>src/App.js</code> and save to reload.
-            </p>*/}
+            <TimeManagement />
+            {/*<Introduce />*/}
             <Footer />
         </div>
-
-
-
-
         );
     }
 }
-
 export default App;

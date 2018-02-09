@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactRouterDOM,{BrowserRouter, Route, NavLink} from 'react-router-dom';
-import Introduce from './Introduce';
 
-export default class Navigation extends Component{
+
+export class Navigation extends Component{
 
     render(){
         return(
@@ -24,7 +24,7 @@ export default class Navigation extends Component{
 
             </BrowserRouter>
 
-            <Introduce />
+
         </div>
         );
     }
