@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import {Navigation} from '../js/Navigation.js';
-import {Footer} from '../js/Footer.js';
-import '../css/App.css';
+import {Navigation} from '../components/Navigation.jsx';
+import {Footer} from '../components/Footer.jsx';
+
+import './App.css';
 
 
 class App extends Component {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactRouterDOM,{BrowserRouter, Route, Link} from 'react-router-dom';
-import AddTimeManagement from './AddTimeManagement.js';
-import "../css/TimeManagement.css";
+import AddTimeManagement from './AddTimeManagement.jsx';
+import "./TimeManagement.css";
 
 export default class TimeManagement extends Component{
     constructor(props) {

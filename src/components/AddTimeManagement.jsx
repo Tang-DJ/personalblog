@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import "../css/AddTimeManagement.css";
+import "./AddTimeManagement.css";
 
 export default class AddTimeManagement extends Component{
     constructor(props) {

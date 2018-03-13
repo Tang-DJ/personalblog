@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactRouterDOM,{BrowserRouter, Route, NavLink} from 'react-router-dom';
-import Introduce from './Introduce';
-import TimeManagement from './TimeManagement';
+import Introduce from './Introduce.jsx';
+import TimeManagement from './TimeManagement.jsx';
 
 
 export class Navigation extends Component{
