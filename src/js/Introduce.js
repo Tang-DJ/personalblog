@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 
-export class Introduce extends Component {
+export default class Introduce extends Component {
     constructor(props) {
         super(props);
         this.state = {
             index: 0,
             max: 3
-
         }
     };
     turnLeft() {

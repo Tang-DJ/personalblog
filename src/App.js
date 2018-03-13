@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import {Navigation} from './js/Navigation.js';
 import {Footer} from './js/Footer.js';
 import './css/App.css';
-import Introduce from './js/Introduce';
-import {TimeManagement} from './js/TimeManagement';
+
 
 class App extends Component {
 
@@ -11,8 +10,7 @@ class App extends Component {
         return (
         <div className="App">
             <Navigation />
-            <TimeManagement />
-            {/*<Introduce />*/}
+       {/*     <TimeManagement />*/}
             <Footer />
         </div>
         );

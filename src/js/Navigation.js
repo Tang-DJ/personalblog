@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ReactRouterDOM,{BrowserRouter, Route, NavLink} from 'react-router-dom';
+import Introduce from './Introduce';
+import TimeManagement from './TimeManagement';
 
 
 export class Navigation extends Component{
@@ -10,21 +12,18 @@ export class Navigation extends Component{
             <BrowserRouter >
                 <div className="container">
                     <nav className="nav nav-pills">
-                        <li className="active"><NavLink exact to="/">首页</NavLink></li>
-                        <li><NavLink to={{pathname: '/introduce'}}>个人简介</NavLink></li>
-                        <li><NavLink  to="/contact">项目经历</NavLink></li>
+                        <li className="active"><NavLink exact to="/" >首页</NavLink></li>
+                        <li><NavLink activeClassName="active" to={{pathname: '/Introduce'}}>个人简介</NavLink></li>
+                        <li><NavLink to={{pathname: '/contact'}}>项目经历</NavLink></li>
+                        <li><NavLink to={{pathname: '/TimeManagement'}}>时间管理</NavLink></li>
                     </nav>
-                    {/*<div>
-                    <Route exact path="/" render={() => <h1>Home</h1>} />
-                    <Route path="/about" render={() => <h1>About</h1>} />
-                    <Route path="/contact" render={() => <h1>Contact</h1>} />
-                </div>*/}
-
+                    <div>
+                    <Route exact path="/" render={() => <h1>首页</h1>} />
+                    <Route path="/Introduce" render={() => <Introduce/>} />
+                    <Route path="/TimeManagement" render={() => <TimeManagement/>} />
+                    </div>
                 </div>
-
             </BrowserRouter>
-
-
         </div>
         );
     }
